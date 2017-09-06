@@ -11,7 +11,6 @@ function update() {
     if (currentFrame >= anim.length) { currentFrame = 0; }
 
     span.text("RO" + anim[currentFrame] + "RO");
-    requestAnimationFrame(update);
 }
 
-requestAnimationFrame(update);
+setInterval(update, 70);
